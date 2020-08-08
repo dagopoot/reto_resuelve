@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  backend_django:
+    container_name: resuelve-backend-django
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./resuelve:/code
+    ports:
+      - "8000:8000"
