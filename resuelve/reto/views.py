@@ -31,7 +31,7 @@ def calculate_salaries(request):
         response = {
             "message": f"Error al calcular los salarios, error: {ex}"}
 
-        return Response(response, status=status.HTTP_400_BAD_REQUEST)
+        return Response(response, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 @api_view(['POST'])
