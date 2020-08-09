@@ -56,7 +56,7 @@ $ docker ps
 
 #copie el valor del CONTAINER ID correspondiente a la imagen a continuación
 CONTAINER ID     IMAGE                       COMMAND
-a1ads6dt34ad     backend_backend_django      "python /code/resuel�"
+a1ads6dt34ad     backend_backend_django      "python /code/resuelve"
 
 #Sustituya el valor en lugar de <container-id>, este comando ejecutara las pruebas
 $ docker exec -it <container-id> python /code/manage.py test reto
