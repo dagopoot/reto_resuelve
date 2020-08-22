@@ -73,12 +73,12 @@ class Salary:
 
         individual_goal = self._get_goal_level(team, player["nivel"])
 
-        player_percentage = self._get_percentaje(
+        player_percentage = self._get_percentage(
             individual_goal,
             player["goles"]
         )
 
-        team_percentage = self._get_percentaje(
+        team_percentage = self._get_percentage(
             team_goal,
             team_goal_achieved
         )
@@ -88,7 +88,7 @@ class Salary:
 
         return base_salary + team_bonus + individual_bonus
 
-    def _get_percentaje(self, goal, achieved):
+    def _get_percentage(self, goal, achieved):
         goal = Decimal(goal)
         achieved = Decimal(achieved)
 
