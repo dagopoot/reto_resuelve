@@ -1,6 +1,8 @@
 # Reto Resuelve
 
-Solución para el reto resuelve, se puede iniciar con docker-compose o con conda y la versión 3.8 de python
+Solución para el reto resuelve
+
+https://github.com/resuelve/prueba-ing-backend
 
 ## Requerimientos
 
